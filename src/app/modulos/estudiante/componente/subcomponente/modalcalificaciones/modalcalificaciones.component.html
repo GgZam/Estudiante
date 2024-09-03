@@ -1,0 +1,47 @@
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" [attr.data-bs-target]="'#'+modalid">Agregar</button>
+
+<div class="modal fade" id="{{modalid}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">INGRESO DE CALIFICACIONES</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div id="divMensaje"></div>
+            <div class="modal-body">
+                <form method="post">
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Nombre Tarea:</label>
+                        <input type="text" name="recipient-name" [(ngModel)]="dataCalificaciones.nombres_tarea"
+                            class="form-control" id="recipient-name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="recipient-desc" class="col-form-label">Descripci&oacute;n Tarea:</label>
+                        <input name="recipient-desc" type="text" [(ngModel)]="dataCalificaciones.descripcion_tarea"
+                            class="form-control" id="recipient-dec" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="recipient-dateinicio" class="col-form-label">Fecha de Inicio:</label>
+                        <input name="recipient-dateinicio" type="date" [(ngModel)]="dataCalificaciones.fecha_inicio"
+                            class="form-control" id="recipient-dateinicio" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="recipient-datefin" class="col-form-label">Fecha de Fin:</label>
+                        <input name="recipient-datefin" type="date" [(ngModel)]="dataCalificaciones.fecha_fin"
+                            class="form-control" id="recipient-datefin" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="recipient-cal" class="col-form-label">Calificaci&oacute;n:</label>
+                        <input name="recipient-cal" type="number" [(ngModel)]="dataCalificaciones.calificacion"
+                            class="form-control" id="recipient-cal" required>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" id="btnCerrarModal" class="btn btn-secondary" value="Cerrar"
+                            data-bs-dismiss="modal">
+                        <input type="button" class="btn btn-primary" value="Guardar" (click)="guardar()">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

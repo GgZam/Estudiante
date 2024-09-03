@@ -1,27 +1,27 @@
-# Estudiantes
+# Datos Estudiantes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+Ingreso de Estudiantes
 
-## Development server
+<img src= "./src/assets/est.png"/>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+# Datos Representantes
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Ingreso de Datos del Representante
 
-## Build
+<img src="./src/assets/represen.png"/>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Calificaciones
 
-## Running unit tests
+Lista de calificaciones
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<img src="./src/assets/califi.png"/>
 
-## Running end-to-end tests
+Ingreso de Calificaciones
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<img src="./src/assets/ingresoCalifi.png"/>
 
-## Further help
+|
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<img src="./src/assets/image.png"/>
+
